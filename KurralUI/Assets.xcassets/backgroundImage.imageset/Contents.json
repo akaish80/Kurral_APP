@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "wp5489522-thiruvalluvar-wallpapers.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "wp5489522-thiruvalluvar-wallpapers@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "wp5489522-thiruvalluvar-wallpapers@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

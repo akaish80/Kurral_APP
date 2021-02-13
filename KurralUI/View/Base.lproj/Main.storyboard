@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DdD-ZY-G0l">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KurralUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="bRW-fi-Itm">
+                                <rect key="frame" x="12" y="88" width="390" height="720"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="1G9-HN-hkg">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="569"/>
+                                        <color key="backgroundColor" red="0.74466772713708629" green="0.75807863369977513" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYY-Kp-SV9">
+                                        <rect key="frame" x="50.5" y="669" width="289" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="fDA-6v-DND"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <state key="normal" title="Click to View Kurral"/>
+                                        <connections>
+                                            <segue destination="blh-7g-0lP" kind="show" identifier="kurralAdikaramView" id="iLU-n7-C9D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eYY-Kp-SV9" secondAttribute="trailing" constant="50.5" id="AfD-J3-IBc"/>
+                                    <constraint firstAttribute="trailing" secondItem="1G9-HN-hkg" secondAttribute="trailing" id="OOb-hU-AMG"/>
+                                    <constraint firstAttribute="bottom" secondItem="eYY-Kp-SV9" secondAttribute="bottom" id="ZXn-Bb-mjK"/>
+                                    <constraint firstItem="1G9-HN-hkg" firstAttribute="leading" secondItem="bRW-fi-Itm" secondAttribute="leading" id="bwl-xn-eww"/>
+                                    <constraint firstItem="1G9-HN-hkg" firstAttribute="top" secondItem="bRW-fi-Itm" secondAttribute="top" id="c0W-eo-Whq"/>
+                                    <constraint firstItem="eYY-Kp-SV9" firstAttribute="leading" secondItem="bRW-fi-Itm" secondAttribute="leading" constant="50.5" id="f4H-vp-xfc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.74263209100000005" green="0.75211262700000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bRW-fi-Itm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9JR-Lz-nsu"/>
+                            <constraint firstItem="bRW-fi-Itm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="9gR-WD-ggJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bRW-fi-Itm" secondAttribute="trailing" constant="12" id="KVG-pb-77L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bRW-fi-Itm" secondAttribute="bottom" constant="54" id="kEk-aw-gGw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fye-dL-LI6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="80.357142857142847"/>
+        </scene>
+        <!--Kurral Adikaram View Controller-->
+        <scene sceneID="gzt-Bs-ClU">
+            <objects>
+                <viewController id="blh-7g-0lP" customClass="KurralAdikaramViewController" customModule="KurralUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rNV-RN-wj8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gwf-Wq-f44">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ReusableCell" id="YM8-RJ-Ag7">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YM8-RJ-Ag7" id="sKB-fV-boB">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AyP-s0-ll8" kind="show" identifier="KurralTableList" id="vxc-rL-KOp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0bn-gk-pKl"/>
+                        <color key="backgroundColor" red="0.74466772713708629" green="0.75807863369977513" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gwf-Wq-f44" firstAttribute="top" secondItem="0bn-gk-pKl" secondAttribute="top" id="1zA-TA-fR9"/>
+                            <constraint firstItem="0bn-gk-pKl" firstAttribute="trailing" secondItem="gwf-Wq-f44" secondAttribute="trailing" id="CQZ-ZH-vbi"/>
+                            <constraint firstItem="0bn-gk-pKl" firstAttribute="bottom" secondItem="gwf-Wq-f44" secondAttribute="bottom" id="EED-6g-AJ8"/>
+                            <constraint firstItem="gwf-Wq-f44" firstAttribute="leading" secondItem="0bn-gk-pKl" secondAttribute="leading" id="sN8-XH-ta1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="G2s-cx-icJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="gwf-Wq-f44" id="jYP-ac-ZTo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhg-sG-gyk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747.826086956522" y="79.6875"/>
+        </scene>
+        <!--Kurral List View Controller-->
+        <scene sceneID="12g-MZ-MJj">
+            <objects>
+                <viewController id="AyP-s0-ll8" customClass="KurralListViewController" customModule="KurralUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aUF-mp-IRq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xye-r4-f3M">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="KurralListViewCell" id="4tS-u4-PKF">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4tS-u4-PKF" id="KGa-o2-qjy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lJt-20-3sl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lJt-20-3sl" firstAttribute="trailing" secondItem="Xye-r4-f3M" secondAttribute="trailing" id="5oS-5D-aeP"/>
+                            <constraint firstItem="Xye-r4-f3M" firstAttribute="leading" secondItem="lJt-20-3sl" secondAttribute="leading" id="Bmp-y4-gmL"/>
+                            <constraint firstItem="Xye-r4-f3M" firstAttribute="top" secondItem="lJt-20-3sl" secondAttribute="top" id="HSf-S3-HNV"/>
+                            <constraint firstItem="lJt-20-3sl" firstAttribute="bottom" secondItem="Xye-r4-f3M" secondAttribute="bottom" id="qJP-km-Se7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dup-bV-JGS"/>
+                    <connections>
+                        <outlet property="KurralListTable" destination="Xye-r4-f3M" id="QRl-Mw-klr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvB-rr-ctK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2646" y="158"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fr6-Up-ZH0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DdD-ZY-G0l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PwE-N1-9JQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.74263209100000005" green="0.75211262700000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aIv-FB-Yet"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lc1-Av-M9G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundImage" width="390" height="419"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
